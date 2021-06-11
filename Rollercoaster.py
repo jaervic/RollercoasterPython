@@ -17,9 +17,13 @@ if height >= 120:
     elif age <= 18:
         cost += 7
         print("Youth tickets cost $7")
+    elif age >= 45 and age <= 55:
+        cost = 0
+        print("Older people ride for free")
     else:
         cost += 12
         print("Adults tickets costs $12")
+        
     pictures = input("Do you want pictures? it costs $3. Y or N: ")
     if pictures == "Y" or pictures == "y":
         cost += 3
